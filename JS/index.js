@@ -72,10 +72,8 @@ function play() {
     good = true;   
     for (var i = 0; i < 20; i++) {
         // 20 rounds before you win
-        // Random # between 1-4
         order.push(Math.floor(Math.random() * 4) + 1)
     }
-    // console.log(order);
     compTurn = true;    // It's first PC's turn
     intervalId = setInterval(gameTurn, 800); // 800 ms
 }   // End of play() f(x)
